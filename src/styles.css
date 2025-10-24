@@ -5,6 +5,7 @@
     --clay: #f7672e;
     --teal-green: #20785f;
     --deep-forest-green: #495D44;
+    --muted-gold: #D1B45A;
 
 
     box-sizing: border-box;
@@ -14,16 +15,17 @@
 body {
     margin: 0px;
     background-color: var(--ivory-white);
-    height: 800px;
 }
 
 h1, h2, h3, h4, p {
     margin: 0px;
     padding: 0px;
+    color: var(--charcoal-brown);
 }
 
 #content {
-    padding: 30px;
+    padding-left: 65px;
+    padding-right: 65px;
 }
 
 #header {
@@ -102,4 +104,44 @@ h1, h2, h3, h4, p {
 .quotes > em {
     font-weight: 200;
     color: var(--charcoal-brown);
+}
+
+.dish-showcase {
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+}
+
+.food-img {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 4px solid var(--deep-forest-green);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.food-img > p {
+    text-align: center;
+    font-weight: 300;
+    color: var(--charcoal-brown);
+}
+
+.subheading {
+    font-size: 24px;
+}
+
+.link {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.extra-space {
+    height: 50px;
+}
+
+#footer {
+    height: 25px;
+    background-color: var(--charcoal-brown);
 }
